@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: echo ./.github/actions/${{env.PATH}}
-      - uses: ./.github/actions/${{env.PATH}}
+      - run: echo ./.github/actions/${{vars.PATH}}
+      - uses: ./.github/actions/${{vars.PATH}}
